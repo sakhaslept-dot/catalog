@@ -1,0 +1,8 @@
+services:
+  web:
+    image: php:8.3-apache
+    ports:
+      - "127.0.0.1:8080:80"
+    volumes:
+      - "./app:/var/www/html:ro"
+docker compose down
